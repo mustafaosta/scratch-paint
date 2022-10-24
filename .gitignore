@@ -19,3 +19,9 @@ dist/*
 
 # tests
 /test/results/*
+
+# dotenv
+/.env
+
+# IntelliJ
+.idea/*
