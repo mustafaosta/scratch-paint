@@ -1,6 +1,6 @@
 FROM node:16-alpine
 
-ARG PORT=8078
+ARG PORT=5001
 
 RUN mkdir -p /usr/src/scratch-paint
 

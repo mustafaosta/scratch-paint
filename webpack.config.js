@@ -74,8 +74,11 @@ module.exports = [
     defaultsDeep({}, base, {
         devServer: {
             contentBase: path.resolve(__dirname, 'playground'),
-            host: '0.0.0.0',
-            port: process.env.PORT || 8078
+            host: 'https://seat-mapping.webased.net',
+            allowedHosts: [
+                '.webased.net'
+            ],
+            port: process.env.PORT || 5001
         },
         entry: {
             playground: './src/playground/playground.jsx'
