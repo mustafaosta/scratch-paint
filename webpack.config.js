@@ -75,9 +75,7 @@ module.exports = [
         devServer: {
             contentBase: path.resolve(__dirname, 'playground'),
             host: 'https://seat-mapping.webased.net',
-            allowedHosts: [
-                '.webased.net'
-            ],
+            disableHostCheck: true,
             port: process.env.PORT || 5001
         },
         entry: {
